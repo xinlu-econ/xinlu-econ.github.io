@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Data</title>
+    <title>Data I Worked With</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,8 +21,47 @@
     </nav>
 
     <section>
-        <h2>Datasets</h2>
-        <p>I have extensive experience working with various large data types, including...</p>
+        <h2>Data I Worked With</h2>
+        <p>
+            I have extensive experience working with various large data types, including both cross-sectional and longitudinal data. This is a list of data which I found super interesting:
+        </p>
+
+        <ul>
+            <li><strong>National Longitudinal Survey of Youth 1997 (NLSY97)</strong>
+                <ul>
+                    <li>A longitudinal survey that tracks a cohort of individuals born between 1980-1984, providing extensive data on education, employment, family background, and life outcomes.</li>
+                    <li>Includes detailed information on school enrollment, work experience, job transitions, income, training programs, household characteristics, and the ways individuals finance their college education (e.g., student loans, grants, and parental support).</li>
+                    <li><strong>My experience:</strong> When linking each respondent’s education and employment information, it is crucial to first identify the specific educational institution or company they were associated with. 
+                        The dataset structure requires additional steps to match these records accurately over time.</li>
+                </ul>
+            </li>
+
+            <li><strong>Panel Study of Income Dynamics (PSID)</strong>
+                <ul>
+                    <li>One of the longest-running household panel surveys, making it invaluable for studying long-term economic trends.</li>
+                    <li>Intergenerational data, useful for studying family-level dynamics and economic mobility over generations.</li>
+                    <li><strong>My experience:</strong> It provides detailed information about risk behaviors such as smoking and drinking 
+                        and unique information about gender perspectives. But you might want to be careful about the number of observations left for estimation.</li>
+                </ul>
+            </li>
+
+            <li><strong>National Survey of Children’s Health (NSCH 2022)</strong>
+                <ul>
+                    <li>A cross-sectional survey that provides comprehensive data on children's health, well-being, family characteristics, and access to healthcare in the United States.</li>
+                    <li>Includes detailed information on physical and mental health, developmental milestones, healthcare utilization, family dynamics, and social determinants of health.</li>
+                    <li><strong>My experience:</strong> Many variables in NSCH 2022 are discrete, so when using this dataset, it is essential to consider whether the sample size is sufficient for identification.</li>
+                </ul>
+            </li>
+
+            <li><strong>Integrated Postsecondary Education Data System (IPEDS)</strong>
+                <ul>
+                    <li>A comprehensive dataset covering U.S. postsecondary institutions, providing detailed information on enrollment, tuition costs, financial aid, faculty characteristics, institutional finances, and student outcomes.</li>
+                    <li>Includes longitudinal data on higher education institutions, allowing analysis of trends in tuition, graduation rates, and institutional characteristics across different time periods.</li>
+                    <li><strong>My experience:</strong> IPEDS can be linked with NLSY97 geocode data using the UNITID number to obtain detailed educational institution information for each respondent.</li>
+                </ul>
+            </li>
+        </ul>
     </section>
 </body>
 </html>
+

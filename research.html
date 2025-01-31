@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <title>Research</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleAbstract(id) {
+            var abstract = document.getElementById(id);
+            if (abstract.style.display === "none") {
+                abstract.style.display = "block";
+            } else {
+                abstract.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -22,8 +32,20 @@
     <section>
         <h2>My Research</h2>
         <ul>
-            <li><a href="research_paper_1.pdf">Research Paper 1</a></li>
-            <li><a href="research_paper_2.pdf">Research Paper 2</a></li>
+            <li>
+                <a href="#" onclick="toggleAbstract('abstract1')">Research Paper 1 Title</a>
+                <div id="abstract1" class="abstract" style="display: none;">
+                    <p><strong>Abstract:</strong> This paper explores... [Insert abstract here]</p>
+                    <p><a href="research_paper_1.pdf" target="_blank">Download Paper</a></p>
+                </div>
+            </li>
+            <li>
+                <a href="#" onclick="toggleAbstract('abstract2')">Research Paper 2 Title</a>
+                <div id="abstract2" class="abstract" style="display: none;">
+                    <p><strong>Abstract:</strong> This study investigates... [Insert abstract here]</p>
+                    <p><a href="research_paper_2.pdf" target="_blank">Download Paper</a></p>
+                </div>
+            </li>
         </ul>
     </section>
 </body>

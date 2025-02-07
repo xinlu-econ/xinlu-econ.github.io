@@ -118,14 +118,54 @@ nav ul li a:hover {
     background: #002a66;
 }
 
-/* Other Pages */
-section {
+/* Personal Life Gallery */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     max-width: 900px;
     margin: 60px auto;
     padding: 40px;
     background: white;
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hover-box {
+    position: relative;
+    width: 45%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.hover-box img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.hover-box:hover img {
+    transform: scale(1.05);
+}
+
+.hover-box p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hover-box:hover p {
+    opacity: 1;
 }
 
 /* Responsive Design */
@@ -150,7 +190,17 @@ section {
     nav ul li {
         margin: 10px 0;
     }
+    
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hover-box {
+        width: 90%;
+    }
 }
+
 
 
 

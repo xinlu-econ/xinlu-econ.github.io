@@ -7,12 +7,12 @@ body {
     color: #333;
 }
 
-/* Header (Restored to Original Horizontal Format) */
+/* Header */
 header {
     background: url('header.jpg') no-repeat center center;
     background-size: cover;
     text-align: center;
-    padding: 60px 20px;
+    padding: 100px 20px;
     color: white;
     font-size: 36px;
     font-weight: bold;

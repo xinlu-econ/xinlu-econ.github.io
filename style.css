@@ -59,11 +59,8 @@ nav ul li a:hover {
     color: #FFD700;
 }
 
-/* Homepage Layout */
-.main-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+/* Page Layout */
+section {
     max-width: 1100px;
     margin: 80px auto;
     padding: 50px;
@@ -72,58 +69,13 @@ nav ul li a:hover {
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.profile img {
-    width: 250px;
-    border-radius: 10px;
-    margin-right: 40px;
-}
-
-.intro {
-    max-width: 500px;
-    margin-right: 50px;
-}
-
-.contact-form {
-    background: #f9f9f9;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-    max-width: 350px;
-    flex-grow: 1;
-}
-
-.contact-form h3 {
-    margin-bottom: 15px;
-}
-
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.contact-form button {
-    background: #004488;
-    color: white;
-    padding: 10px 14px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.contact-form button:hover {
-    background: #002a66;
-}
-
 /* Personal Life Gallery */
 .gallery {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 60px auto;
     padding: 40px;
     background: white;
@@ -133,7 +85,7 @@ nav ul li a:hover {
 
 .hover-box {
     position: relative;
-    width: 45%;
+    width: calc(50% - 10px);
     overflow: hidden;
     border-radius: 10px;
 }
@@ -170,27 +122,6 @@ nav ul li a:hover {
 
 /* Responsive Design */
 @media (max-width: 900px) {
-    .main-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile img {
-        margin-bottom: 20px;
-    }
-
-    .contact-form {
-        max-width: 100%;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-    
     .gallery {
         flex-direction: column;
         align-items: center;
@@ -200,6 +131,7 @@ nav ul li a:hover {
         width: 90%;
     }
 }
+
 
 
 

@@ -84,6 +84,7 @@ section {
 
 .profile img {
     width: 250px;
+    height: 350px; /* Increased height for larger image */
     border-radius: 10px;
     margin-right: 40px;
 }

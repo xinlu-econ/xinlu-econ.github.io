@@ -130,9 +130,8 @@ section {
 
 /* Personal Life Gallery */
 .gallery {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     max-width: 1000px;
     margin: 60px auto;
@@ -142,10 +141,11 @@ section {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Adjust image layout to ensure proper alignment */
 .hover-box {
     position: relative;
-    width: calc(50% - 10px);
-    height: 300px;
+    width: 100%;
+    height: 400px;
     overflow: hidden;
     border-radius: 10px;
     display: flex;
@@ -153,12 +153,14 @@ section {
     justify-content: center;
 }
 
-/* Ensure images are square to avoid cutting off heads */
+/* Ensure images fill the box while maintaining aspect ratio */
 .hover-box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    aspect-ratio: 1 / 1;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
 .hover-box:hover img {
@@ -196,7 +198,7 @@ section {
     font-size: 18px;
     opacity: 0;
     transition: opacity 0.3s ease;
-    background: rgba(0, 0, 0, 0.6); /* Expanding shadow effect */
+    background: rgba(0, 0, 0, 0.6); /* Full shadow effect */
     border-radius: 10px;
 }
 
@@ -228,16 +230,15 @@ section {
     }
     
     .gallery {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         align-items: center;
     }
     
     .hover-box {
-        width: 90%;
-        height: auto;
+        width: 100%;
+        height: 300px;
     }
 }
-
 
 
 

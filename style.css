@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* Header */
+/* Header (Restored to Original Full Height) */
 header {
     background: url('header.jpg') no-repeat center center;
     background-size: cover;
@@ -59,14 +59,63 @@ nav ul li a:hover {
     color: #FFD700;
 }
 
-/* Page Layout */
-section {
+/* Homepage Layout (Restored to Horizontal Format) */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     max-width: 1100px;
     margin: 80px auto;
     padding: 50px;
     background: white;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile img {
+    width: 250px;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.intro {
+    max-width: 500px;
+    margin-right: 50px;
+}
+
+.contact-form {
+    background: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    flex-grow: 1;
+}
+
+.contact-form h3 {
+    margin-bottom: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #004488;
+    color: white;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background: #002a66;
 }
 
 /* Personal Life Gallery */
@@ -144,6 +193,27 @@ section {
 
 /* Responsive Design */
 @media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile img {
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+    
     .gallery {
         flex-direction: column;
         align-items: center;
@@ -154,7 +224,6 @@ section {
         height: 250px;
     }
 }
-
 
 
 

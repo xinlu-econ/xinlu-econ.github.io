@@ -86,12 +86,18 @@ section {
 .hover-box {
     position: relative;
     width: calc(50% - 10px);
+    height: 300px;
     overflow: hidden;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hover-box img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -103,15 +109,16 @@ section {
 
 .hover-box p {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -129,8 +136,10 @@ section {
     
     .hover-box {
         width: 90%;
+        height: 250px;
     }
 }
+
 
 
 

@@ -2,7 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://junyu1003.github.io/junyu-zhang.github.io/</loc>
-        <lastmod>2025-02-07</lastmod>
+        <lastmod>2025-02-08</lastmod>
         <priority>1.0</priority>
     </url>
+    <url>
+        <loc>https://junyu1003.github.io/junyu-zhang.github.io/cv_resume.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://junyu1003.github.io/junyu-zhang.github.io/research.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://junyu1003.github.io/junyu-zhang.github.io/data.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://junyu1003.github.io/junyu-zhang.github.io/personal_life.html</loc>
+        <priority>0.6</priority>
+    </url>
 </urlset>
+
